@@ -34,7 +34,7 @@ public class Main {
         } else {
             int currentYear = LocalDate.now().getYear();
             var type = deviceOS == 1 ? "Android" : "IOS";
-            var appType = deviceYear <currentYear ? "облегченную " : "";
+            var appType = deviceYear < 2015 ? "облегченную " : "";
             System.out.println("Установите " + appType + " версию для системы " + type);
 
         }
